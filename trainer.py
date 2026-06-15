@@ -33,12 +33,20 @@ def evaluate_answers(answer_pairs):
 
 def run_quiz(entries):
     print("\nQuiz startet. Bitte Übersetzungen eingeben.\n")
-    print("\nQuiz startet. Bitte Übersetzungen eingeben.\n")
     given_answers = []
+    correct = 0
+    wrong = 0
 
     for item in entries:
         user_answer = input(f"{item['question']}: ")
         given_answers.append((user_answer, item['answer']))
+
+        if is_correct(user_answer, item['answer']):
+            correct += 1
+        else:
+            wrong += 1
+
+        print(f"Aktueller Punktestand: {correct} richtig, {wrong} falsch")
 
     result = evaluate_answers(given_answers)
     print("\nErgebnis")
