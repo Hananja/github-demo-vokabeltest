@@ -36,6 +36,8 @@ python3 -m unittest discover -s tests
 3. Kleine Erweiterungsaufgabe implementieren (s. u.)
 4. Änderungen werden per Pull Request eingereicht.
 
+Entwickeln Sie jeweils die Anpassungen in einem eigenen Branch.
+
 ## Pull-Request-Aufgaben
 
 jeweils mit passendem Test:
