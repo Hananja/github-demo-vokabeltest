@@ -12,11 +12,11 @@
     "answer": "Schule"
   },
   {
-    "question": "network",
-    "answer": "Netzwerk"
+    "question": "car",
+    "answer": "Auto"
   },
   {
-    "question": "server",
-    "answer": "Server"
+    "question": "street",
+    "answer": "Straße"
   }
 ]

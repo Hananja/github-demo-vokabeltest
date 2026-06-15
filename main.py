@@ -19,13 +19,18 @@ def show_vocabulary(entries):
 
 
 def main():
-    entries = load_vocabulary("data/vocabulary.json")
+    entries = load_vocabulary("asd", 2)
 
     while True:
         show_menu()
         choice = input("Auswahl: ").strip()
 
         if choice == "1":
+            print("1) IT")
+            print("2) Englisch")
+            print("3) Bio")
+            entries = load_vocabulary("asd", int(input()))
+            print(entries)
             run_quiz(entries)
         elif choice == "2":
             show_vocabulary(entries)
