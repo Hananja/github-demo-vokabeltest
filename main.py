@@ -1,5 +1,5 @@
 from trainer import run_quiz, ask_yes_no
-from storage import load_vocabulary
+from storage import load_vocabulary, save_vocabulary
 
 extra_vocabulary = []
 
@@ -44,6 +44,7 @@ def main():
 def add_vocabulary(entries):
     global extra_vocabulary
     extra_vocabulary += [{"question": input("Frage: "), "answer": input("Antwort: ")}]
+    save_vocabulary("data/vocabulary.json", extra_vocabulary + entries)
     return extra_vocabulary + entries
     
 
