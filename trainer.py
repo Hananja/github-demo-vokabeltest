@@ -38,7 +38,7 @@ def run_quiz(entries):
 
     for item in entries:
         user_answer = input(f"{item['question']}: ")
-        given_answers.append((user_answer, item['answer']))
+        given_answers.append((user_answer.lower(), item['answer'].lower()))
 
     result = evaluate_answers(given_answers)
     print("\nErgebnis")
