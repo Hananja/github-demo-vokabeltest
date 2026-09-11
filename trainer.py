@@ -33,7 +33,6 @@ def evaluate_answers(answer_pairs):
 
 def run_quiz(entries):
     print("\nQuiz startet. Bitte Übersetzungen eingeben.\n")
-    print("\nQuiz startet. Bitte Übersetzungen eingeben.\n")
     given_answers = []
 
     for item in entries:
