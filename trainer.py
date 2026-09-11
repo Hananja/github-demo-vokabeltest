@@ -18,7 +18,7 @@ class QuizResult:
 
 
 def normalize_answer(text: str) -> str:
-    return text.strip().lower()
+    return text.strip()
 
 
 def is_correct(user_answer: str, expected_answer: str) -> bool:
